@@ -30,7 +30,7 @@ for i in range(len(textlist) - 1):
         category = "東方Project"
     elif targetText == "P&A":
         category = "POPS&ANIME"
-    elif targetText == "イロドリ":
+    elif targetText == "イロ":
         category = "イロドリミドリ"
     # それ以外の曲データ
     else:
@@ -39,7 +39,7 @@ for i in range(len(textlist) - 1):
         datalist = dataText.split("	");
         # 要素数が1だったら次のデータとつなげる
         if len(datalist) == 1:
-            prefix = targetText
+            prefix += datalist[0]
             continue
         else:
             # データを生成
