@@ -6,8 +6,8 @@ resultCSVList = []
 
 # 行ごとのデータに区切る
 textlist = text.split("\n")
-# 一番最後の行は余分な改行なので１つ手前までループを回す
-for i in range(len(textlist) - 1):
+
+for i in range(len(textlist)):
     dataText = textlist[i].replace(",", "").replace(", "," ").replace("，", " ")
     # スペースで区切りリストを作る
     datalist = dataText.split("	")
